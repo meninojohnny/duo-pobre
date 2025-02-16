@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #c9e4caca;
+}
+
+.content {
+    padding: 20px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-bar {
+    background-color: #005f73;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(73, 80, 87, .4);
+    color: white; 
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.btn-app-bar,
+.btn-back-app-bar {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    margin: 0px 8px;
+}
+
+.word {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #55828B;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
+    color: rgba(255, 255, 255, 0.821);
+    border: 2px solid rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+}
+
+.alternative-list,
+.option-list,
+.category-list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.alternative-item,
+.option-item,
+.category-item {
+    background-color: #87BBA2;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 8px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
+    border: 2px solid rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.alternative-item:hover,
+.btn-next:hover,
+.option-item:hover,
+.category-item:hover,
+.btn:hover {
+    background-color: #456154;
+    color: rgba(255, 255, 255, 0.821);
+}
+
+.option-item,
+.category-item {
+    display: block;
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-edit {
+    background-color: #00b4d8;
+}
+
+.btn-add {
+    background-color: #2ec4b6;
+}
+
+.btn-save {
+    background-color: #38b000;
+    display: none;
+}
+
+.btn-cancel {
+    display: none;
+}
+
+.btn-remove,
+.btn-cancel {
+    background-color: #ef233c;
+}
+
+.btn-next {
+    background-color: #219ebc;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.821);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
+    border: 2px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+    display: none;
+}
+
+.category-edit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.category-edit-item-content {
+    background-color: #87BBA2;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
+    border: 2px solid rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    width: 100%;
+}
+
+.form-add-category {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-add-category input {
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.name-category-edit {
+    font-size: 1.1rem;
+    border: 0;
+    border-radius: 3px;
+    padding: 0px 5px;
+    display: none;
+}

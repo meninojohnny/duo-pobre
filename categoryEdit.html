@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+
+        <div class="app-bar">
+            <a class="btn-back-app-bar" href="optionEdit.html"><i class="fa-solid fa-arrow-left"></i></a>
+                            <span class="text-app-bar">Editar Categorias</span>
+                            <a class="btn-app-bar" href="inicial.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+
+        <div class="content">
+
+            <div class="form-add-category">
+
+                <input type="text" class="form-control name-category" placeholder="Nome da categoria" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="btn btn-add" onclick="addCategory()"><i class="fa-solid fa-add"></i></span>
+
+            </div>
+
+            <div class="category-list"></div>
+
+        </div>
+
+    </main>
+
+    <script src="categoryEdit.js" type="module"></script>
+    
+</body>
+</html>
