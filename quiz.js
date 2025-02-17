@@ -76,8 +76,8 @@ function criarAlternativaItem(item) {
 
 window.verificar = function(item) {
     if (!clicked) {
-        document.querySelector("#" + item).style.backgroundColor = "#ef3c2d";
-        document.querySelector("#" + drownWord.id).style.backgroundColor = "#70e000";
+        document.querySelector("#" + item).style.backgroundColor = "#ff4b4b";
+        document.querySelector("#" + drownWord.id).style.backgroundColor = "#43c000";
         clicked = true;
         document.querySelector(".btn-next").style.display = "block";
     }  

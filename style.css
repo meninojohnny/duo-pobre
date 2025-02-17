@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #c9e4caca;
+    background-color: #ffffff;
 }
 
 .content {
@@ -20,7 +20,7 @@ body {
 }
 
 .app-bar {
-    background-color: #005f73;
+    background-color: #43c000;
     width: 100%;
     text-align: center;
     box-shadow: 0px 0px 5px rgba(73, 80, 87, .4);
@@ -49,13 +49,13 @@ body {
 
 .word {
     font-size: 1.5rem;
-    font-weight: 500;
-    background-color: #55828B;
+    font-weight: bold;
+    background-color: #58cc02;
     display: inline-block;
     padding: 5px 20px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
-    color: rgba(255, 255, 255, 0.821);
+    color: #ffff;
     border: 2px solid rgba(0, 0, 0, .1);
     margin-bottom: 30px;
 }
@@ -70,7 +70,7 @@ body {
 .alternative-item,
 .option-item,
 .category-item {
-    background-color: #87BBA2;
+    background-color: #ffc800;
     font-size: 1.2rem;
     text-align: center;
     margin: auto;
@@ -81,7 +81,7 @@ body {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
     border: 2px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, 0.7);
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -112,11 +112,11 @@ body {
 }
 
 .btn-edit {
-    background-color: #00b4d8;
+    background-color: #1cb0f6;
 }
 
 .btn-add {
-    background-color: #2ec4b6;
+    background-color: #58cc02;
 }
 
 .btn-save {
@@ -130,15 +130,16 @@ body {
 
 .btn-remove,
 .btn-cancel {
-    background-color: #ef233c;
+    background-color: #ff4b4b;
 }
 
 .btn-next {
-    background-color: #219ebc;
+    background-color: #1cb0f6;
     font-size: 1.2rem;
+    font-weight: bold;
     padding: 5px 20px;
     border-radius: 5px;
-    color: rgba(255, 255, 255, 0.821);
+    color: #ffff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
     border: 2px solid rgba(0, 0, 0, .1);
     cursor: pointer;
@@ -153,14 +154,14 @@ body {
 }
 
 .category-edit-item-content {
-    background-color: #87BBA2;
+    background-color: #ff9600;
     font-size: 1.2rem;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
     border: 2px solid rgba(0, 0, 0, .1);
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 500;
+    color: #ffff;
+    font-weight: 600;
     width: 100%;
 }
 
@@ -174,8 +175,8 @@ body {
 
 .form-add-category input {
     padding: 10px 10px;
-    border: 0;
-    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
     width: 100%;
     font-size: 1.1rem;
 }
