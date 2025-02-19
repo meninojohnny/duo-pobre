@@ -5,6 +5,12 @@ var categories = [];
 async function init() {
     categories = await findCategory();
     criarCategoryEditList();
+    mostrarMain();
+}
+
+function mostrarMain() {
+    document.querySelector(".main").style.display = "block";
+    document.querySelector(".loading").style.display = "none";
 }
 
 function criarCategoryEditList() {

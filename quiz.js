@@ -23,6 +23,12 @@ async function init() {
     conjunto = montarConjunto();
     adicionarAppBar();
     criarAlternativas();
+    mostrarMain();
+}
+
+function mostrarMain() {
+    document.querySelector(".main").style.display = "block";
+    document.querySelector(".loading").style.display = "none";
 }
 
 function sortearPalavra() {

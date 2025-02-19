@@ -1,5 +1,9 @@
 import {addWord} from './service.js';
 
+function init() {
+    mostrarMain();
+}
+
 window.addWords = async function()  {
     var words = document.querySelector(".name-word");
 
@@ -15,3 +19,11 @@ window.addWords = async function()  {
 
     }
 }
+
+
+function mostrarMain() {
+    document.querySelector(".main").style.display = "block";
+    document.querySelector(".loading").style.display = "none";
+}
+
+init();

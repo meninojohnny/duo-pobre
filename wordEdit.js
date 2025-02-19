@@ -13,6 +13,12 @@ async function init() {
     });
 
     createWordEditList();
+    mostrarMain();
+}
+
+function mostrarMain() {
+    document.querySelector(".main").style.display = "block";
+    document.querySelector(".loading").style.display = "none";
 }
 
 function createWordEditList() {
