@@ -83,6 +83,11 @@ function criarAlternativaItem(item) {
     return `<div id=${item.id} onclick="verificar(id)" class="alternative-item">${item.translation}</div>`;
 }
 
+window.mostrarAlternativa = function() {
+    document.querySelector(".alternative-list").style.display = "block";
+    document.querySelector(".btn-show").style.display = "none";
+}
+
 window.verificar = function(item) {
     if (!clicked) {
         document.getElementById(item).style.backgroundColor = "#ff4b4b";
@@ -99,6 +104,8 @@ window.next = function() {
     clicked = false;
     document.querySelector(".btn-next").style.display = "none";
     conjunto = montarConjunto();
+    document.querySelector(".alternative-list").style.display = "none";
+    document.querySelector(".btn-show").style.display = "block";
     criarAlternativas();
 }
 

@@ -86,6 +86,10 @@ main {
     margin-bottom: 30px;
 }
 
+.alternative-list {
+    display: none;
+}
+
 .alternative-item,
 .option-item,
 .category-item {
@@ -108,7 +112,8 @@ main {
 .btn-next:hover,
 .option-item:hover,
 .category-item:hover,
-.btn:hover {
+.btn:hover,
+.btn-show:hover {
     background-color: #456154;
     color: rgba(255, 255, 255, 0.821);
 }
@@ -152,8 +157,8 @@ main {
     background-color: #ff4b4b;
 }
 
-.btn-next {
-    background-color: #1cb0f6;
+.btn-next,
+.btn-show {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 5px 20px;
@@ -162,6 +167,14 @@ main {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
     border: 2px solid rgba(0, 0, 0, .1);
     cursor: pointer;
+}
+
+.btn-show {
+    background-color: #ce82ff;
+}
+
+.btn-next {
+    background-color: #1cb0f6;
     display: none;
 }
 
