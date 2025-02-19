@@ -62,7 +62,8 @@ body {
 
 .alternative-list,
 .option-list,
-.category-list {
+.category-list,
+.word-list {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -146,14 +147,16 @@ body {
     display: none;
 }
 
-.category-edit-item {
+.category-edit-item,
+.word-edit-item {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.category-edit-item-content {
+.category-edit-item-content,
+.word-edit-item-content {
     background-color: #ff9600;
     font-size: 1.2rem;
     padding: 5px 10px;
@@ -165,7 +168,8 @@ body {
     width: 100%;
 }
 
-.form-add-category {
+.form-add-category,
+.form-add-word {
     display: flex;
     width: 100%;
     gap: 10px;
@@ -173,12 +177,22 @@ body {
     align-items: center;
 }
 
-.form-add-category input {
+.form-add-category input,
+.form-add-word input {
     padding: 10px 10px;
     border: 2px solid rgba(0, 0, 0, 0.274);
     border-radius: 5px;
     width: 100%;
     font-size: 1.1rem;
+}
+
+.form-add-word input,
+.name-word-item {
+    margin-bottom: 10px;
+}
+
+.form-edit-word-item {
+    display: none;
 }
 
 .name-category-edit {

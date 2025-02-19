@@ -62,6 +62,28 @@ export async function addWord(word) {
     }
 }
 
+export async function updateWord(id, dados) {
+    try {
+      const docRef = doc(db, "word", id);
+  
+      await updateDoc(docRef, dados);
+  
+      console.log("Palavra atualizada com sucesso!");
+    } catch (error) {
+      console.error("Erro ao atualizar a palavra:", error);
+    }
+}
+
+export async function removeWord(wordId) {
+    try {
+        const docRef = doc(db, "word", wordId);
+        await deleteDoc(docRef);
+        console.log(`Palavra com ID ${wordId} removido com sucesso!`);
+    } catch (error) {
+        console.error("Erro ao remover o documento:", error);
+    }
+}
+
 export async function findCategory() {
     try {
         const q = query(collection(db, "category"));
@@ -116,7 +138,7 @@ export async function updateCategory(id, dados) {
     } catch (error) {
       console.error("Erro ao atualizar a categoria:", error);
     }
-  }
+}
 
 export async function removerCategory(categoryId) {
     try {
