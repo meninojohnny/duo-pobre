@@ -20,9 +20,12 @@ async function init() {
         category = await findCategoriaById(categoryId);
         category = category.name;
     }
-    conjunto = montarConjunto();
     adicionarAppBar();
-    criarAlternativas();
+    if (words.length > 0) {
+        conjunto = montarConjunto();
+        criarAlternativas();
+    }
+
     mostrarMain();
 }
 
@@ -82,8 +85,8 @@ function criarAlternativaItem(item) {
 
 window.verificar = function(item) {
     if (!clicked) {
-        document.querySelector("#" + item).style.backgroundColor = "#ff4b4b";
-        document.querySelector("#" + drownWord.id).style.backgroundColor = "#43c000";
+        document.getElementById(item).style.backgroundColor = "#ff4b4b";
+        document.getElementById(drownWord.id).style.backgroundColor = "#43c000";
         clicked = true;
         document.querySelector(".btn-next").style.display = "block";
     }  
