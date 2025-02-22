@@ -39,6 +39,7 @@ function sortearPalavra() {
     if (drownWords.includes(word)) {
         return sortearPalavra();
     }
+    drownWords.push(word);
     return word;
 }
 
@@ -91,7 +92,9 @@ window.mostrarAlternativa = function() {
 window.verificar = function(item) {
     if (!clicked) {
         document.getElementById(item).style.backgroundColor = "#ff4b4b";
+        document.getElementById(item).style.color = "white";
         document.getElementById(drownWord.id).style.backgroundColor = "#43c000";
+        document.getElementById(drownWord.id).style.color = "white";
         clicked = true;
         document.querySelector(".btn-next").style.display = "block";
     }  

@@ -35,8 +35,8 @@ function createWordEditItem(item) {
                 <div class="word-edit-item-content">
                     <span class="word-name word-name-${item.id}">${item.name}</span>
                     <div class="form-edit-word-item form-edit-word-item-${item.id}">
-                        <input type="text" value=${item.name} class="form-control name-word-item name-word-item-${item.id}" placeholder="Palavra" aria-label="Username" aria-describedby="basic-addon1">
-                        <input type="text" value=${item.translation} class="form-control translation-word-item translation-word-item-${item.id}" placeholder="Tradução" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" value="${item.name}" class="form-control name-word-item name-word-item-${item.id}" placeholder="Palavra" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" value="${item.translation}" class="form-control translation-word-item translation-word-item-${item.id}" placeholder="Tradução" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
                 <span id="${item.id}" class="btn btn-edit btn-edit-${item.id}" onclick="editWord(id)"><i class="fa-solid fa-pen"></i></span>

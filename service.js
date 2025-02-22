@@ -15,7 +15,7 @@ const db = getFirestore(app);
 
 export async function finWord() {
     try {
-        const q = query(collection(db, "word"));
+        const q = query(collection(db, "word"), orderBy("name", "asc"));
         const querySnapshot = await getDocs(q);
   
         if (!querySnapshot.empty) {
