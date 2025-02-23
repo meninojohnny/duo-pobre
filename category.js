@@ -4,7 +4,7 @@ var categories = [];
 
 async function init() {
     categories = await findCategory();
-    criarCategoryList();
+    // criarCategoryList();
     mostrarMain();
 }
 
@@ -22,7 +22,7 @@ function criarCategoryList() {
 }
 
 function criarCategoryItem(item) {
-    return `<a class="category-item" href="quiz.html?category=${item.id}"> ${item.name} </a>`;
+    return `<a class="category-item" href="quiz.html?category=${item.id}"> ${item.name}</a>`;
 }
 
 init();
