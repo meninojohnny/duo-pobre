@@ -76,6 +76,7 @@ main {
     color: #ffff;
     border: 2px solid rgba(0, 0, 0, .1);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .alternative-list,
@@ -99,7 +100,7 @@ main {
     margin: auto;
     margin-bottom: 20px;
     width: 80%;
-    padding: 8px 0px;
+    padding: 8px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
     border: 2px solid rgba(0, 0, 0, .1);
@@ -232,4 +233,12 @@ main {
     border-radius: 3px;
     padding: 0px 5px;
     display: none;
+}
+
+.placar {
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

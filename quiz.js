@@ -7,6 +7,7 @@ var conjunto = [];
 var clicked = false;
 var categoryId = "";
 var category;
+var count = 0;
 
 async function init() {
     var params = new URLSearchParams(window.location.search);
@@ -23,6 +24,7 @@ async function init() {
     adicionarAppBar();
     if (words.length > 0) {
         conjunto = montarConjunto();
+        criarPlacar();
         criarAlternativas();
     }
 
@@ -68,6 +70,11 @@ function adicionarAppBar() {
                             <a class="btn-app-bar" href="inicial.html"><i class="fa-solid fa-house"></i></a>`;
 }
 
+function criarPlacar() {
+    var placar = document.querySelector(".placar");
+    placar.innerHTML = `<span class="count">${count}</span> / <span class="total">${words.length}</span>`;
+}
+
 function criarAlternativas() {
     var wordTitle = document.querySelector(".word");
     var alternatives = document.querySelector(".alternative-list");
@@ -103,12 +110,15 @@ window.verificar = function(item) {
 window.next = function() {
     if (drownWords.length == words.length) {
         drownWords = [];
+        count = 0;
     }
     clicked = false;
     document.querySelector(".btn-next").style.display = "none";
     conjunto = montarConjunto();
     document.querySelector(".alternative-list").style.display = "none";
     document.querySelector(".btn-show").style.display = "block";
+    count += 1;
+    criarPlacar();
     criarAlternativas();
 }
 
