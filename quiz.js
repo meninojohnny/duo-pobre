@@ -7,7 +7,7 @@ var conjunto = [];
 var clicked = false;
 var categoryId = "";
 var category;
-var count = 0;
+var count = 1;
 
 async function init() {
     var params = new URLSearchParams(window.location.search);
@@ -110,7 +110,7 @@ window.verificar = function(item) {
 window.next = function() {
     if (drownWords.length == words.length) {
         drownWords = [];
-        count = 0;
+        count = 1;
     }
     clicked = false;
     document.querySelector(".btn-next").style.display = "none";
