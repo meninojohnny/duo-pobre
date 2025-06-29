@@ -122,4 +122,11 @@ window.next = function() {
     criarAlternativas();
 }
 
+window.toSayWord = function() {
+    const utterance = new SpeechSynthesisUtterance(drownWord.name);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.6;
+    speechSynthesis.speak(utterance);
+}
+
 init();

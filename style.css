@@ -75,8 +75,16 @@ main {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
     color: #ffff;
     border: 2px solid rgba(0, 0, 0, .1);
-    margin-bottom: 30px;
     text-align: center;
+}
+
+.btn-sound {
+    width: 45px; 
+    height: 45px; 
+    border: 2px solid rgba(0, 0, 0, 0.216);
+    background-color: #edede9;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .alternative-list,
