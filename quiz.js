@@ -1,4 +1,4 @@
-import {finWord, findWordByCategory, findCategoriaById} from './service.js';
+import {finWord, findWordByCategory, findCategoriaById, falarComGoogle} from './service.js';
 
 var words = [];
 var drownWord;
@@ -8,6 +8,7 @@ var clicked = false;
 var categoryId = "";
 var category;
 var count = 1;
+var audio;
 
 async function init() {
     var params = new URLSearchParams(window.location.search);
@@ -75,7 +76,7 @@ function criarPlacar() {
     placar.innerHTML = `<span class="count">${count}</span> / <span class="total">${words.length}</span>`;
 }
 
-function criarAlternativas() {
+async function criarAlternativas() {
     var wordTitle = document.querySelector(".word");
     var alternatives = document.querySelector(".alternative-list");
 
@@ -85,6 +86,7 @@ function criarAlternativas() {
     conjunto.forEach(w => {
         alternatives.innerHTML += criarAlternativaItem(w);
     });
+    audio = await falarComGoogle(drownWord.name);
 }
 
 function criarAlternativaItem(item) {
@@ -123,11 +125,7 @@ window.next = function() {
 }
 
 window.toSayWord = function() {
-    const utterance = new SpeechSynthesisUtterance(drownWord.name);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.6;
-
-    speechSynthesis.speak(utterance);
+    audio.play();
 }
 
 init();

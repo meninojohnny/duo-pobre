@@ -148,4 +148,32 @@ export async function removerCategory(categoryId) {
     } catch (error) {
         console.error("Erro ao remover o documento:", error);
     }
-  }
+}
+
+export async function falarComGoogle(text) {
+    const API_KEY = 'AIzaSyAnjQOBCnNRx3t0l9myaAh9eULtOn3g4rU';
+
+    const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${API_KEY}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        input: { text: text },
+        voice: {
+          languageCode: 'en-US',
+          name: 'en-US-Wavenet-D',
+          ssmlGender: 'MALE'
+        },
+        audioConfig: {
+          audioEncoding: 'MP3',
+          speakingRate: 0.6
+        }
+      })
+    });
+
+    const data = await response.json();
+    const audio = new Audio('data:audio/mp3;base64,' + data.audioContent);
+
+    return audio;
+}
