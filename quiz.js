@@ -129,14 +129,11 @@ window.toSayWord = function() {
 
     const voices = speechSynthesis.getVoices();
 
-    const vozPreferida = voices.find(v => v.name.includes("Google US English")) ||
-                       voices.find(v => v.lang === 'en-US');
+    const vozPreferida = voices.find(v => v.name.includes("Google US English"));
 
     if (vozPreferida) {
         utterance.voice = vozPreferida;
     }
-
-    speechSynthesis.speak(utterance);
 
     speechSynthesis.speak(utterance);
 }
