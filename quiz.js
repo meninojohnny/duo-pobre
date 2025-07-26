@@ -127,14 +127,6 @@ window.toSayWord = function() {
     utterance.lang = 'en-US';
     utterance.rate = 0.6;
 
-    const voices = speechSynthesis.getVoices();
-
-    const vozPreferida = voices.find(v => v.name.includes("Google US English"));
-
-    if (vozPreferida) {
-        utterance.voice = vozPreferida;
-    }
-
     speechSynthesis.speak(utterance);
 }
 
