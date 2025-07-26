@@ -4,7 +4,6 @@ var categories = [];
 
 async function init() {
     categories = await findCategory();
-    // criarCategoryList();
     mostrarMain();
 }
 
