@@ -5,10 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
+    color: rgba(0, 0, 0, 0.8); 
 }
 
 body {
-    background-color: #ffffff;
+    background-color: rgba(59, 130, 246, .2);
     height: 100vh;
 }
 
@@ -31,25 +32,26 @@ main {
 
 .content {
     padding: 20px;
-    padding-top: 90px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 .app-bar {
-    background-color: #43c000;
+    background-color: #fffffff2;
     width: 100%;
     text-align: center;
     box-shadow: 0px 0px 5px rgba(73, 80, 87, .4);
-    color: white; 
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    position: fixed;
-    z-index: 1;
 }
 
 .btn-app-bar,
@@ -65,26 +67,38 @@ main {
     margin: 0px 8px;
 }
 
+.content-2 {
+    background-color: rgba(59, 130, 246, .1);
+    padding: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
 .word {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    background-color: #58cc02;
     display: inline-block;
-    padding: 5px 20px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
-    color: #ffff;
-    border: 2px solid rgba(0, 0, 0, .1);
-    text-align: center;
+    text-align: start;
 }
 
 .btn-sound {
     width: 45px; 
     height: 45px; 
-    border: 2px solid rgba(0, 0, 0, 0.216);
-    background-color: #edede9;
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .alternative-list,
@@ -93,44 +107,59 @@ main {
 .word-list {
     width: 100%;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .alternative-list {
     display: none;
 }
 
-.alternative-item,
-.option-item,
-.category-item {
-    background-color: #ffc800;
-    font-size: 1.2rem;
+.option-item, .category-item, 
+.alternative-item, .btn-show,
+.btn-next {
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 12px 0px;
+    border-radius: 8px;
+    font-weight: 500;
     text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 8px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
-    border: 2px solid rgba(0, 0, 0, .1);
-    color: rgba(0, 0, 0, 0.6);
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 1.1rem;
 }
 
-.alternative-item:hover,
-.btn-next:hover,
-.option-item:hover,
-.category-item:hover,
-.btn:hover,
-.btn-show:hover {
-    background-color: #456154;
-    color: rgba(255, 255, 255, 0.821);
+.alternative-item {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px;
+}
+
+.category-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.option-item1 {
+    background-color: rgb(37 99 235);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.option-item2 {
+    background-color: #fffffff2;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .option-item,
 .category-item {
     display: block;
     text-decoration: none;
+}
+
+.btn-next {
+    display: none
 }
 
 .btn {
@@ -166,25 +195,9 @@ main {
     background-color: #ff4b4b;
 }
 
-.btn-next,
-.btn-show {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 5px 20px;
-    border-radius: 5px;
-    color: #ffff;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.317);
-    border: 2px solid rgba(0, 0, 0, .1);
-    cursor: pointer;
-}
-
-.btn-show {
-    background-color: #ce82ff;
-}
-
-.btn-next {
-    background-color: #1cb0f6;
-    display: none;
+.btn-show, .btn-next {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .category-edit-item,
