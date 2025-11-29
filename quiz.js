@@ -94,7 +94,7 @@ function criarAlternativaItem(item) {
 }
 
 window.mostrarAlternativa = function() {
-    document.querySelector(".alternative-list").style.display = "block";
+    document.querySelector(".alternative-list").style.display = "flex";
     document.querySelector(".btn-show").style.display = "none";
 }
 
