@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="loading">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <div class="app-bar">
+            <a class="btn-back-app-bar" href="optionEdit.html"><i class="fa-solid fa-arrow-left"></i></a>
+                            <span class="text-app-bar">Editar Palavras</span>
+                            <a class="btn-app-bar" href="inicial.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+
+        <div class="content">
+
+            <div class="form-add-word">
+
+                <div style="width: 100%;">
+                    <input type="text" class="form-control name-word" placeholder="Palavra" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control translation-word" placeholder="Tradução" aria-label="Username" aria-describedby="basic-addon1">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected value="null">Selecione uma opção</option>
+                    </select>
+                </div>
+
+                <span class="btn btn-add" onclick="addWord()"><i class="fa-solid fa-add"></i></span>
+
+            </div>
+
+            <div class="word-list"></div>
+
+        </div>
+
+    </main>
+
+    <script src="wordEdit.js" type="module"></script>
+    
+</body>
+</html>

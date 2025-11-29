@@ -1,0 +1,302 @@
+[
+    {
+        "name": "Along",
+        "translation": "Perto",
+        "category": null
+    },
+    {
+        "name": "Any",
+        "translation": "Qualquer",
+        "category": null
+    },
+    {
+        "name": "Afternoon",
+        "translation": "Tarde",
+        "category": null
+    },
+    {
+        "name": "Barbecue",
+        "translation": "Churrasco",
+        "category": null
+    },
+    {
+        "name": "Breeze",
+        "translation": "Brisa",
+        "category": null
+    },
+    {
+        "name": "Build",
+        "translation": "Construir",
+        "category": null
+    },
+    {
+        "name": "Carefree",
+        "translation": "Despreocupado",
+        "category": null
+    },
+    {
+        "name": "Childhood",
+        "translation": "Infância",
+        "category": null
+    },
+    {
+        "name": "Colorful",
+        "translation": "Colorido",
+        "category": null
+    },
+    {
+        "name": "Discover",
+        "translation": "Descobrir",
+        "category": null
+    },
+    {
+        "name": "Dish",
+        "translation": "Prato",
+        "category": null
+    },
+    {
+        "name": "Enjoy",
+        "translation": "Aproveitar",
+        "category": null
+    },
+    {
+        "name": "Evening",
+        "translation": "Entardecer",
+        "category": null
+    },
+    {
+        "name": "Filled",
+        "translation": "Preenchido",
+        "category": null
+    },
+    {
+        "name": "Find",
+        "translation": "Encontrar",
+        "category": null
+    },
+    {
+        "name": "Fondly",
+        "translation": "Carinhosamente",
+        "category": null
+    },
+    {
+        "name": "Friendly",
+        "translation": "Amigável",
+        "category": null
+    },
+    {
+        "name": "Full",
+        "translation": "Completo",
+        "category": null
+    },
+    {
+        "name": "Gentle",
+        "translation": "Gentil",
+        "category": null
+    },
+    {
+        "name": "Hidden",
+        "translation": "Escondido",
+        "category": null
+    },
+    {
+        "name": "Hope",
+        "translation": "Esperança",
+        "category": null
+    },
+    {
+        "name": "Island",
+        "translation": "Ilha",
+        "category": null
+    },
+    {
+        "name": "Joy",
+        "translation": "Alegria",
+        "category": null
+    },
+    {
+        "name": "Laughter",
+        "translation": "Risada",
+        "category": null
+    },
+    {
+        "name": "Less",
+        "translation": "Menos",
+        "category": null
+    },
+    {
+        "name": "Locals",
+        "translation": "Moradores locais",
+        "category": null
+    },
+    {
+        "name": "Longing",
+        "translation": "Saudade",
+        "category": null
+    },
+    {
+        "name": "Miss",
+        "translation": "Falta",
+        "category": null
+    },
+    {
+        "name": "Remind",
+        "translation": "Lembrete",
+        "category": null
+    },
+    {
+        "name": "Relive",
+        "translation": "Reviver",
+        "category": null
+    },
+    {
+        "name": "Reefs",
+        "translation": "Recifes",
+        "category": null
+    },
+    {
+        "name": "Sandcastles",
+        "translation": "Castelos de areia",
+        "category": null
+    },
+    {
+        "name": "Saw",
+        "translation": "Vi",
+        "category": null
+    },
+    {
+        "name": "Seaside",
+        "translation": "Litoral",
+        "category": null
+    },
+    {
+        "name": "See",
+        "translation": "Ver",
+        "category": null
+    },
+    {
+        "name": "Skies",
+        "translation": "Céus",
+        "category": null
+    },
+    {
+        "name": "Small",
+        "translation": "Pequena",
+        "category": null
+    },
+    {
+        "name": "Snorkeling",
+        "translation": "Mergulho de mascara",
+        "category": null
+    },
+    {
+        "name": "Someday",
+        "translation": "Algum dia",
+        "category": null
+    },
+    {
+        "name": "Some",
+        "translation": "Algum",
+        "category": null
+    },
+    {
+        "name": "Spent",
+        "translation": "Gasto",
+        "category": null
+    },
+    {
+        "name": "Sunshine",
+        "translation": "Luz do sol",
+        "category": null
+    },
+    {
+        "name": "Sunny",
+        "translation": "Ensolarado",
+        "category": null
+    },
+    {
+        "name": "Swim",
+        "translation": "Nadar",
+        "category": null
+    },
+    {
+        "name": "Test",
+        "translation": "Testar/provar",
+        "category": null
+    },
+    {
+        "name": "Those",
+        "translation": "Aqueles",
+        "category": null
+    },
+    {
+        "name": "Together",
+        "translation": "Juntos",
+        "category": null
+    },
+    {
+        "name": "Town",
+        "translation": "Cidade",
+        "category": null
+    },
+    {
+        "name": "Trails",
+        "translation": "Trilhas",
+        "category": null
+    },
+    {
+        "name": "Travel",
+        "translation": "Viagem",
+        "category": null
+    },
+    {
+        "name": "Unforgettable",
+        "translation": "Inesquecível",
+        "category": null
+    },
+    {
+        "name": "Vacation",
+        "translation": "Férias",
+        "category": null
+    },
+    {
+        "name": "View",
+        "translation": "Vista",
+        "category": null
+    },
+    {
+        "name": "Walk",
+        "translation": "Andar",
+        "category": null
+    },
+    {
+        "name": "Warmly",
+        "translation": "Calorosamente",
+        "category": null
+    },
+    {
+        "name": "Watch",
+        "translation": "Assistir",
+        "category": null
+    },
+    {
+        "name": "Waves",
+        "translation": "Ondas",
+        "category": null
+    },
+    {
+        "name": "Weather",
+        "translation": "Clima",
+        "category": null
+    },
+    {
+        "name": "Went",
+        "translation": "Foi",
+        "category": null
+    },
+    {
+        "name": "Were",
+        "translation": "Eram",
+        "category": null
+    }
+]
