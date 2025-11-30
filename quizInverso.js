@@ -14,12 +14,9 @@ async function init() {
     categoryId = params.get('category');
 
     if (categoryId == "all") {
-        words = await finWord();
-        category = "Todos";
+        words = await lerJsonEMapear();
+        category = "Quiz Inverso";
     } else {
-        words = await findWordByCategory(categoryId);
-        category = await findCategoriaById(categoryId);
-        category = category.name;
     }
     adicionarAppBar();
     if (words.length > 0) {
@@ -88,11 +85,11 @@ function criarAlternativas() {
 }
 
 function criarAlternativaItem(item) {
-    return `<div id=${item.id} onclick="verificar(id)" class="alternative-item">${item.name}</div>`;
+    return `<div id=${gerarId(item.name)} onclick="verificar(id)" class="alternative-item">${item.name}</div>`;
 }
 
 window.mostrarAlternativa = function() {
-    document.querySelector(".alternative-list").style.display = "block";
+    document.querySelector(".alternative-list").style.display = "flex";
     document.querySelector(".btn-show").style.display = "none";
 }
 
@@ -100,8 +97,8 @@ window.verificar = function(item) {
     if (!clicked) {
         document.getElementById(item).style.backgroundColor = "#ff4b4b";
         document.getElementById(item).style.color = "white";
-        document.getElementById(drownWord.id).style.backgroundColor = "#43c000";
-        document.getElementById(drownWord.id).style.color = "white";
+        document.getElementById(gerarId(drownWord.name)).style.backgroundColor = "#43c000";
+        document.getElementById(gerarId(drownWord.name)).style.color = "white";
         clicked = true;
         document.querySelector(".btn-next").style.display = "block";
     }  
@@ -120,6 +117,25 @@ window.next = function() {
     count += 1;
     criarPlacar();
     criarAlternativas();
+}
+
+async function lerJsonEMapear() {
+    try {
+        const response = await fetch("words.json");
+        const jsonData = await response.json();
+        const listaDicionarios = jsonData.map(item => ({
+            name: item.name,
+            translation: item.translation
+        }));
+        return listaDicionarios;
+    } catch (error) {
+        console.error("Erro ao ler JSON:", error);
+        return [];
+    }
+}
+
+function gerarId(texto) {
+    return btoa(unescape(encodeURIComponent(texto)));
 }
 
 init();

@@ -1,302 +1,75 @@
 [
-    {
-        "name": "Along",
-        "translation": "Perto",
-        "category": null
-    },
-    {
-        "name": "Any",
-        "translation": "Qualquer",
-        "category": null
-    },
-    {
-        "name": "Afternoon",
-        "translation": "Tarde",
-        "category": null
-    },
-    {
-        "name": "Barbecue",
-        "translation": "Churrasco",
-        "category": null
-    },
-    {
-        "name": "Breeze",
-        "translation": "Brisa",
-        "category": null
-    },
-    {
-        "name": "Build",
-        "translation": "Construir",
-        "category": null
-    },
-    {
-        "name": "Carefree",
-        "translation": "Despreocupado",
-        "category": null
-    },
-    {
-        "name": "Childhood",
-        "translation": "Infância",
-        "category": null
-    },
-    {
-        "name": "Colorful",
-        "translation": "Colorido",
-        "category": null
-    },
-    {
-        "name": "Discover",
-        "translation": "Descobrir",
-        "category": null
-    },
-    {
-        "name": "Dish",
-        "translation": "Prato",
-        "category": null
-    },
-    {
-        "name": "Enjoy",
-        "translation": "Aproveitar",
-        "category": null
-    },
-    {
-        "name": "Evening",
-        "translation": "Entardecer",
-        "category": null
-    },
-    {
-        "name": "Filled",
-        "translation": "Preenchido",
-        "category": null
-    },
-    {
-        "name": "Find",
-        "translation": "Encontrar",
-        "category": null
-    },
-    {
-        "name": "Fondly",
-        "translation": "Carinhosamente",
-        "category": null
-    },
-    {
-        "name": "Friendly",
-        "translation": "Amigável",
-        "category": null
-    },
-    {
-        "name": "Full",
-        "translation": "Completo",
-        "category": null
-    },
-    {
-        "name": "Gentle",
-        "translation": "Gentil",
-        "category": null
-    },
-    {
-        "name": "Hidden",
-        "translation": "Escondido",
-        "category": null
-    },
-    {
-        "name": "Hope",
-        "translation": "Esperança",
-        "category": null
-    },
-    {
-        "name": "Island",
-        "translation": "Ilha",
-        "category": null
-    },
-    {
-        "name": "Joy",
-        "translation": "Alegria",
-        "category": null
-    },
-    {
-        "name": "Laughter",
-        "translation": "Risada",
-        "category": null
-    },
-    {
-        "name": "Less",
-        "translation": "Menos",
-        "category": null
-    },
-    {
-        "name": "Locals",
-        "translation": "Moradores locais",
-        "category": null
-    },
-    {
-        "name": "Longing",
-        "translation": "Saudade",
-        "category": null
-    },
-    {
-        "name": "Miss",
-        "translation": "Falta",
-        "category": null
-    },
-    {
-        "name": "Remind",
-        "translation": "Lembrete",
-        "category": null
-    },
-    {
-        "name": "Relive",
-        "translation": "Reviver",
-        "category": null
-    },
-    {
-        "name": "Reefs",
-        "translation": "Recifes",
-        "category": null
-    },
-    {
-        "name": "Sandcastles",
-        "translation": "Castelos de areia",
-        "category": null
-    },
-    {
-        "name": "Saw",
-        "translation": "Vi",
-        "category": null
-    },
-    {
-        "name": "Seaside",
-        "translation": "Litoral",
-        "category": null
-    },
-    {
-        "name": "See",
-        "translation": "Ver",
-        "category": null
-    },
-    {
-        "name": "Skies",
-        "translation": "Céus",
-        "category": null
-    },
-    {
-        "name": "Small",
-        "translation": "Pequena",
-        "category": null
-    },
-    {
-        "name": "Snorkeling",
-        "translation": "Mergulho de mascara",
-        "category": null
-    },
-    {
-        "name": "Someday",
-        "translation": "Algum dia",
-        "category": null
-    },
-    {
-        "name": "Some",
-        "translation": "Algum",
-        "category": null
-    },
-    {
-        "name": "Spent",
-        "translation": "Gasto",
-        "category": null
-    },
-    {
-        "name": "Sunshine",
-        "translation": "Luz do sol",
-        "category": null
-    },
-    {
-        "name": "Sunny",
-        "translation": "Ensolarado",
-        "category": null
-    },
-    {
-        "name": "Swim",
-        "translation": "Nadar",
-        "category": null
-    },
-    {
-        "name": "Test",
-        "translation": "Testar/provar",
-        "category": null
-    },
-    {
-        "name": "Those",
-        "translation": "Aqueles",
-        "category": null
-    },
-    {
-        "name": "Together",
-        "translation": "Juntos",
-        "category": null
-    },
-    {
-        "name": "Town",
-        "translation": "Cidade",
-        "category": null
-    },
-    {
-        "name": "Trails",
-        "translation": "Trilhas",
-        "category": null
-    },
-    {
-        "name": "Travel",
-        "translation": "Viagem",
-        "category": null
-    },
-    {
-        "name": "Unforgettable",
-        "translation": "Inesquecível",
-        "category": null
-    },
-    {
-        "name": "Vacation",
-        "translation": "Férias",
-        "category": null
-    },
-    {
-        "name": "View",
-        "translation": "Vista",
-        "category": null
-    },
-    {
-        "name": "Walk",
-        "translation": "Andar",
-        "category": null
-    },
-    {
-        "name": "Warmly",
-        "translation": "Calorosamente",
-        "category": null
-    },
-    {
-        "name": "Watch",
-        "translation": "Assistir",
-        "category": null
-    },
-    {
-        "name": "Waves",
-        "translation": "Ondas",
-        "category": null
-    },
-    {
-        "name": "Weather",
-        "translation": "Clima",
-        "category": null
-    },
-    {
-        "name": "Went",
-        "translation": "Foi",
-        "category": null
-    },
-    {
-        "name": "Were",
-        "translation": "Eram",
-        "category": null
-    }
+  {"name": "I ran out of money", "translation": "Fiquei sem dinheiro"},
+  {"name": "I am telling you", "translation": "Eu tô te dizendo"},
+  {"name": "I've gotta go", "translation": "Eu tenho que ir"},
+  {"name": "Look for", "translation": "Procurar"},
+  {"name": "It might rain later", "translation": "Pode chover mais tarde"},
+  {"name": "Chase", "translation": "Perseguir"},
+  {"name": "It may rain tomorrow", "translation": "Pode chover amanhã"},
+  {"name": "I don’t know what for", "translation": "Eu não sei para quê"},
+  {"name": "Everywhere", "translation": "Em todo lugar"},
+  {"name": "Find out", "translation": "Descobrir"},
+  {"name": "Everyone", "translation": "Todo mundo"},
+  {"name": "Wake up", "translation": "Acordar"},
+  {"name": "It's hard to say", "translation": "É dificil dizer"},
+  {"name": "She suddenly hung up the phone", "translation": "Ela desligou o telefone de repente"},
+  {"name": "Come along with us", "translation": "Venha junto conosco"},
+  {"name": "I am going to the store", "translation": "Eu estou indo para a loja"},
+  {"name": "I imagine that", "translation": "Eu imagino que"},
+  {"name": "We talked about a lot of stuff yesterday", "translation": "Nós conversamos sobre muitas coisas ontem"},
+  {"name": "I could see", "translation": "Eu poderia ver"},
+  {"name": "Fix", "translation": "Consertar"},
+  {"name": "I have seen", "translation": "Eu tenho visto"},
+  {"name": "How dare you", "translation": "Como você ousa"},
+  {"name": "I thought you were coming to the party", "translation": "Eu pensei que você viria à festa."},
+  {"name": "The show must go on", "translation": "O show deve continuar"},
+  {"name": "Don't give up! Keep trying", "translation": "Não desista! Continue tentando"},
+  {"name": "I used to have a dog when I was a kid", "translation": "Eu costumava ter um cachorro quando era criança"},
+  {"name": "She got into the car", "translation": "Ela entrou no carro"},
+  {"name": "I should see", "translation": "Eu deveria ver"},
+  {"name": "I saw", "translation": "Eu vi"},
+  {"name": "I would see", "translation": "Eu veria"},
+  {"name": "Let me see", "translation": "Deixe-me ver"},
+  {"name": "Can you turn on the lights?", "translation": "Você pode acender as luzes?"},
+  {"name": "I must see", "translation": "Eu devo ver"},
+  {"name": "No one", "translation": "Ninguém"},
+  {"name": "Recue", "translation": "Recuperar"},
+  {"name": "Do you have any paper to hand?", "translation": "Você tem algum papel por perto?"},
+  {"name": "I went", "translation": "Eu fui"},
+  {"name": "Call of", "translation": "Cancelar"},
+  {"name": "That so nice", "translation": "Isso é tão legal"},
+  {"name": "I am kidding", "translation": "Eu tô brincando"},
+  {"name": "She put on her coat before leaving", "translation": "Ela colocou o casaco antes de sair"},
+  {"name": "The cake looks good", "translation": "O bolo parece bom"},
+  {"name": "Children grow quickly", "translation": "Crianças crescem rapidamente"},
+  {"name": "I will see", "translation": "Eu verei"},
+  {"name": "We have enough money to buy a car", "translation": "Temos dinheiro suficiente para comprar um carro"},
+  {"name": "Let me think", "translation": "Deixe-me pensar"},
+  {"name": "Maybe i'll see", "translation": "Talvez eu veja"},
+  {"name": "Can you pick up that book for me?", "translation": "Você pode pegar aquele livro para mim?"},
+  {"name": "How can i say it", "translation": "Como posso dizer"},
+  {"name": "She looks after her little brother while their parents are at work", "translation": "Ela cuida do irmãozinho enquanto os pais estão no trabalho"},
+  {"name": "Who cares", "translation": "Quem se importa"},
+  {"name": "I had seen", "translation": "Eu tinha visto"},
+  {"name": "I thought he was Brazilian, but he’s actually Portuguese", "translation": "Eu pensei que ele fosse brasileiro, mas na verdade ele é português"},
+  {"name": "I was seeing", "translation": "Eu estava vendo"},
+  {"name": "Please take off your shoes before entering", "translation": "Por favor, tire seus sapatos antes de entrar"},
+  {"name": "She pretended to be sick so she could stay home", "translation": "Ela fingiu estar doente para poder ficar em casa"},
+  {"name": "Please turn off the lights when you leave", "translation": "Por favor, desligue as luzes quando sair"},
+  {"name": "The children were playing outside", "translation": "As crianças estavam brincando lá fora"},
+  {"name": "My car broke down on the way to work", "translation": "Meu carro quebrou a caminho do trabalho"},
+  {"name": "Even he couldn’t solve the problem", "translation": "Até ele não conseguiu resolver o problema"},
+  {"name": "Those books on the shelf are mine", "translation": "Aqueles livros na estante são meus"},
+  {"name": "I saw someone in the park today", "translation": "Eu vi alguém no parque hoje"},
+  {"name": "I have some friends", "translation": "Eu tenho alguns amigos"},
+  {"name": "Call me any time", "translation": "Me ligue a qualquer hora"},
+  {"name": "She came to my house", "translation": "Ela veio para minha casa"},
+  {"name": "If i am not mistaken", "translation": "Se não me engano"},
+  {"name": "Come back", "translation": "Voltar"},
+  {"name": "I dont care", "translation": "Eu não ligo"},
+  {"name": "You should always tell the truth", "translation": "Você sempre deve dizer a verdade"},
+  {"name": "I usually get up at 7 AM", "translation": "Eu geralmente me levanto às 7 da manhã"},
+  {"name": "Unforgettable", "translation": "Inesquecível"},
+  {"name": "I’m making sure everything is ready for the meeting", "translation": "Estou me certificando de que tudo está pronto para a reunião"},
+  {"name": "I mean", "translation": "Eu quero dizer"}
 ]
