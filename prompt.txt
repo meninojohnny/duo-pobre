@@ -1,0 +1,61 @@
+Você receberá um JSON com duas chaves principais: "frases" e "textos".
+
+OBJETIVO
+Substituir COMPLETAMENTE o conteúdo dos arrays "frases" e "textos", mantendo EXATAMENTE a mesma estrutura do JSON.
+
+REGRAS OBRIGATÓRIAS
+NÃO altere os nomes das chaves.
+NÃO altere a estrutura dos objetos.
+SUBSTITUA todo o conteúdo dos arrays "frases" e "textos".
+NÃO reutilize frases ou textos antigos.
+NÃO crie campos novos.
+NÃO remova campos existentes.
+Retorne APENAS o JSON final.
+
+PARA "frases"
+Gere EXATAMENTE 30 frases.
+Use vocabulário A2 (elementar), incluindo palavras sobre rotina, trabalho, escola, lazer, transporte, compras e saúde.
+Frases curtas e simples, mas podem ter duas ou três ideias conectadas com palavras simples como and, but, because.
+Estrutura principal: sujeito + verbo + complemento, podendo adicionar uma segunda ideia simples.
+NÃO use expressões idiomáticas.
+NÃO use metáforas.
+Evite phrasal verbs complexos.
+Cada item deve seguir exatamente este formato:
+
+{
+  "frase": "...",
+  "traducao": "..."
+}
+
+
+PARA "textos"
+Gere EXATAMENTE 10 textos.
+Textos simples, mas com frases um pouco mais longas que no A1.
+Cada texto deve ter no mínimo 120 palavras.
+Use frases curtas ou médias, com conectores simples (and, but, because, then, so).
+Use principalmente:
+Presente simples
+Passado simples (formas regulares)
+Os textos devem reutilizar as palavras das frases.
+Cada texto deve descrever uma rotina diária simples, experiências pessoais ou situações comuns, incluindo pequenas justificativas ou detalhes.
+Cada item deve seguir exatamente este formato:
+
+{
+  "tema": "...",
+  "texto": "...",
+  "traducao": "..."
+}
+
+
+ESTILO
+Inglês claro e simples, adequado para estudantes do nível A2.
+Frases fáceis de entender.
+Repetição é permitida e desejada.
+Traduções diretas e claras, sem adaptações livres.
+
+SAÍDA
+Retorne SOMENTE o JSON final.
+NÃO escreva explicações, comentários ou qualquer texto fora do JSON.
+
+AGORA
+Gere um NOVO JSON, substituindo totalmente o conteúdo anterior, seguindo o nível A2.

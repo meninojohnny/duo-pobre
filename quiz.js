@@ -5,20 +5,13 @@ var drownWord;
 var drownWords = [];
 var conjunto = [];
 var clicked = false;
-var categoryId = "";
-var category;
 var count = 1;
 var audio;
 
 async function init() {
-    var params = new URLSearchParams(window.location.search);
-    categoryId = params.get('category');
 
-    if (categoryId == "all") {
-        words = await lerJsonEMapear();
-        category = "Quiz Padrão";
-    } else {
-    }
+    words = await lerJsonEMapear();
+
     adicionarAppBar();
     if (words.length > 0) {
         conjunto = montarConjunto();
@@ -64,7 +57,7 @@ function montarConjunto() {
 function adicionarAppBar() {
     const textAppBar = document.querySelector(".app-bar");
     textAppBar.innerHTML = `<a class="btn-back-app-bar" href="category.html"><i class="fa-solid fa-arrow-left"></i></a>
-                            <span class="text-app-bar">${category}</span>
+                            <span class="text-app-bar">Quiz Padrão</span>
                             <a class="btn-app-bar" href="inicial.html"><i class="fa-solid fa-house"></i></a>`;
 }
 
@@ -109,7 +102,7 @@ window.verificar = function (item) {
 window.next = function () {
     if (drownWords.length == words.length) {
         drownWords = [];
-        count = 1;
+        count = 0;
     }
     clicked = false;
     document.querySelector(".btn-next").style.display = "none";
@@ -129,10 +122,13 @@ async function lerJsonEMapear() {
     try {
         const response = await fetch("words.json");
         const jsonData = await response.json();
-        const listaDicionarios = jsonData.map(item => ({
-            name: item.name,
-            translation: item.translation
+
+        const listaDicionarios = jsonData.frases.map(item => ({
+            name: item.frase,
+            translation: item.traducao
         }));
+
+        console.log(listaDicionarios);
         return listaDicionarios;
     } catch (error) {
         console.error("Erro ao ler JSON:", error);
@@ -145,3 +141,5 @@ function gerarId(texto) {
 }
 
 init();
+
+// lerJsonEMapear()
