@@ -10,14 +10,11 @@ var category;
 var count = 1;
 
 async function init() {
-    var params = new URLSearchParams(window.location.search);
-    categoryId = params.get('category');
 
-    if (categoryId == "all") {
-        words = await lerJsonEMapear();
-        category = "Quiz Inverso";
-    } else {
-    }
+
+    words = await lerJsonEMapear();
+    category = "Quiz Inverso";
+
     adicionarAppBar();
     if (words.length > 0) {
         conjunto = montarConjunto();
@@ -123,9 +120,9 @@ async function lerJsonEMapear() {
     try {
         const response = await fetch("words.json");
         const jsonData = await response.json();
-        const listaDicionarios = jsonData.map(item => ({
-            name: item.name,
-            translation: item.translation
+        const listaDicionarios = jsonData.frases.map(item => ({
+            name: item.frase,
+            translation: item.traducao
         }));
         return listaDicionarios;
     } catch (error) {
