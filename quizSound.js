@@ -1,4 +1,4 @@
-import {finWord, findWordByCategory, findCategoriaById, falarComGoogle} from './service.js';
+import {falarComGoogle} from './service.js';
 
 var words = [];
 var drownWord;
@@ -11,17 +11,10 @@ var count = 1;
 var audio;
 
 async function init() {
-    var params = new URLSearchParams(window.location.search);
-    categoryId = params.get('category');
 
-    if (categoryId == "all") {
-        words = await finWord();
-        category = "Todos";
-    } else {
-        words = await findWordByCategory(categoryId);
-        category = await findCategoriaById(categoryId);
-        category = category.name;
-    }
+    words = await lerJsonEMapear();
+    category = "Todos";
+
     adicionarAppBar();
     if (words.length > 0) {
         conjunto = montarConjunto();
@@ -67,7 +60,7 @@ function montarConjunto() {
 function adicionarAppBar() {
     const textAppBar = document.querySelector(".app-bar");
     textAppBar.innerHTML = `<a class="btn-back-app-bar" href="category.html"><i class="fa-solid fa-arrow-left"></i></a>
-                            <span class="text-app-bar">${category}</span>
+                            <span class="text-app-bar">Quiz Sonoro</span>
                             <a class="btn-app-bar" href="inicial.html"><i class="fa-solid fa-house"></i></a>`;
 }
 
@@ -92,7 +85,7 @@ function criarAlternativaItem(item) {
 }
 
 window.mostrarAlternativa = function() {
-    document.querySelector(".alternative-list").style.display = "block";
+    document.querySelector(".alternative-list").style.display = "flex";
     document.querySelector(".btn-show").style.display = "none";
 }
 
@@ -124,6 +117,23 @@ window.next = function() {
 
 window.toSayWord = function() {
     audio.play();
+}
+
+async function lerJsonEMapear() {
+    try {
+        const response = await fetch("words.json");
+        const jsonData = await response.json();
+
+        const listaDicionarios = jsonData.frases.map(item => ({
+            name: item.frase,
+            translation: item.traducao
+        }));
+
+        return listaDicionarios;
+    } catch (error) {
+        console.error("Erro ao ler JSON:", error);
+        return [];
+    }
 }
 
 init();

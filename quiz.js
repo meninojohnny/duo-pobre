@@ -128,7 +128,6 @@ async function lerJsonEMapear() {
             translation: item.traducao
         }));
 
-        console.log(listaDicionarios);
         return listaDicionarios;
     } catch (error) {
         console.error("Erro ao ler JSON:", error);

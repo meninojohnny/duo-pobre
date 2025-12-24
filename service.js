@@ -151,7 +151,7 @@ export async function removerCategory(categoryId) {
 }
 
 export async function falarComGoogle(text) {
-    const API_KEY = 'AIzaSyAnjQOBCnNRx3t0l9myaAh9eULtOn3g4rU';
+    const API_KEY = 'AIzaSyA5hxz93tzkpv7NOAEEDeFCGC3wPeSIguQ';
 
     const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${API_KEY}`, {
       method: 'POST',
